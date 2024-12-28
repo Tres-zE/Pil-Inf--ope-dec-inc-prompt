@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jugando con variables</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="header">
+        <p class="logo">Curso JavaScript Píldoras Informáticas</p>
+      </div>
+      <div class="contenido">
+        <div class="principal">
+          <h1>Jugando con las varibales</h1>
+          <p>
+            En este ejemplo vamos a jugar con las variables y a mostrar un
+            mensaje en pantalla.
+          </p>
+          <p>
+            Para ello vamos a solicitar al usuario que introduzca su nombre y
+            apellido y posteriormente mostraremos un mensaje en pantalla con su
+            nombre y apellido.
+          </p>
+          <script>
+            const nombre = prompt('Introduce tu nombre: ');
+            const apellido = prompt('Introduce tu apellido: ');
+            let edad = prompt('Introduce tu edad: ');
+            let restando = prompt('¿Cuántos años deseas quitarte? ');
+
+            edad -= restando;
+
+            document.write('<p>');
+            document.write(
+              'Bienvenido ' +
+                nombre +
+                ' ' +
+                apellido +
+                '<br>' +
+                'Tu edad es de ' +
+                edad +
+                ' años'
+            );
+            document.write('</p>');
+          </script>
+        </div>
+        <div class="operador">
+          <h1>Operadores de incremento / decremento</h1>
+          <img
+            src="/img/Captura de pantalla 2024-12-27 223330.png"
+            alt="Operadores de incremento y decremento"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
