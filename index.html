@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jugando con variables</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="/script/script_8.js"></script>
   </head>
   <body>
     <div class="contenedor">
@@ -23,27 +24,15 @@
             apellido y posteriormente mostraremos un mensaje en pantalla con su
             nombre y apellido.
           </p>
-          <script>
-            const nombre = prompt('Introduce tu nombre: ');
-            const apellido = prompt('Introduce tu apellido: ');
-            let edad = prompt('Introduce tu edad: ');
-            let restando = prompt('¿Cuántos años deseas quitarte? ');
-
-            edad -= restando;
-
-            document.write('<p>');
-            document.write(
-              'Bienvenido ' +
-                nombre +
-                ' ' +
-                apellido +
-                '<br>' +
-                'Tu edad es de ' +
-                edad +
-                ' años'
-            );
-            document.write('</p>');
-          </script>
+          <p>
+            Para ello vamos a utilizar la función prompt que nos permite
+            solicitar datos al usuario y la función alert que nos permite
+            mostrar un mensaje en pantalla.
+          </p>
+          <p class="codigo">
+            Nota: para realizar este ejemplo debes tener activado el JavaScript
+            que se encuentra en la carpeta script y el archivo script_7.js
+          </p>
         </div>
         <div class="operador">
           <h1>Operadores de incremento / decremento</h1>
@@ -51,6 +40,97 @@
             src="/img/Captura de pantalla 2024-12-27 223330.png"
             alt="Operadores de incremento y decremento"
           />
+        </div>
+
+        <div class="array">
+          <h1>Array, Matrices o Arreglos</h1>
+
+          <div class="parrafo">
+            <p>Es un conjunto de datos</p>
+            <img src="/img/array.png" alt="Array, Matrices o Arreglos" />
+          </div>
+
+          <div class="parrafo">
+            <p>
+              Un array o matriz es una estructura de datos que nos permite
+              almacenar varios valores en una sola variable.
+            </p>
+            <img src="/img/array_tienda.png" alt="Array, Matrices o Arreglos" />
+          </div>
+
+          <div class="parrafo">
+            <p>
+              Los array te permiten almacenar diferentes tipos de datos en un
+              solo lugar en vez de tener diferentes variables que esten
+              dispersas
+            </p>
+            <img
+              src="/img/array_tienda_2.png"
+              alt="Array, Matrices o Arreglos"
+            />
+          </div>
+
+          <div class="parrafo">
+            <p>
+              Para acceder a los datos dentro de un array, siempre se empieza
+              desde 0 haciendo referencia que es el dato en primera posición.
+              <br />
+              Como en este ejemplo, el dato en la posición 0 es "zapatillas" y
+              el dato en la posición 1 es "camiseta" y así sucesivamente.
+              <br />
+              Con un alert podemos mostrar el dato en la posición [1] que nos
+              dara como resultado "camiseta". Tambien podemos mostrar el dato en
+              la consola con console.log.
+            </p>
+
+            <img
+              src="/img/array_tienda_3.png"
+              alt="Array, Matrices o Arreglos"
+            />
+          </div>
+
+          <div class="parrafo">
+            <p>
+              Propiedad length: Nos permite saber cuantos elementos tiene un
+              array
+            </p>
+            <p>
+              Metodo push: Nos permite agregar un nuevo elemento dentro de un
+              array con el que vamos a trabajar
+            </p>
+            <p>
+              Metodo unshift: Nos permite agregar un nuevo elemento al comienzo
+              del array
+            </p>
+            <p>Metodo pop: Nos permite eliminar el ultimo elemento del array</p>
+            <p>
+              Metodo shift: nos permite eliminar el primer elemento del array
+            </p>
+            <img src="/img/metodos.png" alt="Array, Matrices o Arreglos" />
+          </div>
+
+          <div class="manipulando_array">
+            <h2>Manejando Arrays</h2>
+            <p>
+              En este ejemplo vamos a trabajar con un array de productos de una
+              tienda de ropa.
+            </p>
+            <img src="/img/code_array_.png" alt="captura de un array" />
+
+            <script>
+              let productos = ['zapatillas', 'camiseta', 'pantalon', 'gorra'];
+
+              document.write(
+                '<p>El primer articulo es: ' + productos[0] + '</p>'
+              );
+
+              document.write(
+                '<p>La cantidad de articulos que tiene el array es de: ' +
+                  productos.length +
+                  '</p>'
+              );
+            </script>
+          </div>
         </div>
       </div>
     </div>
